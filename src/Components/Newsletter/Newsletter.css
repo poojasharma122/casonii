@@ -1,0 +1,68 @@
+/* newsletter  sec start*/
+.newsletter {
+    background-image: url("../images/home-banner.jpg");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.newsletter_wrapper {
+    background-color: #1e1e1ed6;
+    padding: 24px;
+    max-width: 900px;
+    margin-inline: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.newsletter_content {
+    color: var(--white-color);
+}
+
+.newsletter_inner {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content:space-between;
+    background-color: var(--white-color);
+    max-width: 600px;
+    margin-inline: auto;
+    width: 100%;
+    padding: 4px;
+    border-radius: 4px;
+    margin-block: 2.5rem 1rem;
+}
+
+.newsletter_form {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-self: center;
+    background-color: var(--white-color);
+    width: 100%;
+    padding: 4px;
+    border-radius: 4px;
+
+}
+
+.newsletter_content h2 {
+    margin-bottom: 1.2rem;
+}
+
+.newsletter_form .input_email {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 8px 16px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #222;
+}

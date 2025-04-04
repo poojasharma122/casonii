@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Rubik", sans-serif;
+}
+
+:root {
+    --body-color: #f8f9fa;
+    --primary-color: #b99365;
+    --secondary-color: #121212;
+    --white-color: #ffffff;
+    --black-color: #000;
+
+}
+
+body {
+    background-color: var(--body-color);
+
+}
+
+.container {
+    max-width: 1272px;
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-family: "Rubik", sans-serif;
+}
+
+p,
+li {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 135%;
+    padding: 0;
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    font-family: "Playfair Display", serif;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+}
+
+h5 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+}
+
+.mb-10 {
+    margin-bottom: 100px;
+}
+
+.mb-9 {
+    margin-bottom: 90px;
+}
+
+.page-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #b99365;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 135%;
+    border: 1px solid transparent;
+    outline: none;
+    padding: 16px 42px;
+    background-color: #b99365;
+    color: var(--white-color);
+    transition: 0.3s ease-in-out;
+    font-family: "Rubik", sans-serif;
+    cursor: pointer;
+}
+
+.main-information {
+    margin-block: 3rem;
+}
+
+.information-wrapper {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding-block: 3rem 1rem;
+    padding-inline: 2rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.mainpart-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 90%;
+    margin-inline: auto;
+}
+
+.main-part {
+    width: 100%;
+}
+
+.mainpart-content h1 {
+    margin-bottom: 1rem;
+    font-family: "Gilda-display";
+    font-size: 58px;
+    text-transform: uppercase;
+    line-height: 140%;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.information-inner {
+    margin-bottom: 1.8rem;
+}
+
+.information-inner h3 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #b99365;
+    margin-bottom: 1rem;
+}
+
+.information-inner h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #b99365;
+    margin: 1rem 0;
+}
+
+.information-inner p {
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.information-inner p a {
+    color: #b99365;
+    transition: 0.3s ease-in-out;
+}
+
+.information-inner p a:hover {
+    color: #000;
+}
+
+.information-inner ul {
+    list-style: disc;
+    margin-left: 1.8rem;
+}
+
+.information-inner ul li {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.information-inner ul li::marker {
+    color: #b99365;
+}
+
+
+.btn:hover {
+    background-color: rgba(185, 147, 101, 0.714);
+}
+
+@media (max-width:1024px) {
+    .mb-10 {
+        margin-bottom: 5rem;
+    }
+}
+
+@media (max-width:991px) {
+    .page-heading {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:768px) {
+    .page-heading {
+        font-size: 2.2rem;
+    }
+
+    .mb-10 {
+        margin-bottom: 3.5rem;
+    }
+}
+
+@media (max-width:575px) {
+    .page-heading {
+        font-size: 2rem;
+    }
+
+    .mb-10 {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width:480px) {
+    .categories_topbar {
+        margin-bottom: 1.8rem;
+    }
+
+    .page-heading {
+        font-size: 1.8rem;
+    }
+
+    .mb-10 {
+        margin-bottom: 2.5rem;
+    }
+
+    .categories_topbar {
+        margin-bottom: 1.6rem;
+    }
+}

@@ -1,0 +1,150 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-block: 1rem;
+    transition: background-color 0.3s ease;
+    z-index: 99;
+}
+
+.header.scrolled {
+    background-color: #000;
+    color: var(--white-color);
+    z-index: 99;
+}
+
+.header.scrolled .header_imgLink img {
+    filter: brightness(0) saturate(100%) invert(59%) sepia(45%) saturate(363%) hue-rotate(353deg) brightness(94%) contrast(84%);
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_list {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+}
+
+.header_link {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+    font-family: "Rubik", sans-serif;
+    position: relative;
+}
+
+.header_imgLink {
+    width: 80px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.header_imgLink img {
+    object-fit: contain;
+    transition: 0.3s ease-in-out;
+    filter: brightness(0) saturate(100%) invert(99%) sepia(47%) saturate(0%) hue-rotate(328deg) brightness(110%) contrast(100%);
+}
+
+.header_link:hover {
+    color: var(--white-color);
+}
+
+.header_link:hover {
+    color: var(--white-color);
+}
+
+.header_link:hover::before,
+.header_link.active::before {
+    width: 100%;
+    left: 0;
+    background-color: #b99365;
+}
+
+.header_link.active {
+    color: var(--white-color);
+}
+
+.header_link::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #b99365;
+    transition: all 0.3s linear;
+
+}
+
+.header_humburger {
+    display: none;
+}
+
+.header_humburgerImg {
+    width: 2rem;
+    height: 2rem;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.close-menu {
+    width: 2.1rem;
+    height: 2.1rem;
+    display: none;
+    cursor: pointer;
+}
+
+.close-menu img {
+    filter: invert(1);
+}
+
+/* media query */
+@media (max-width:1199px) {
+    .header_humburger {
+        display: block;
+    }
+
+    .close-menu {
+        display: block;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+    }
+
+    .header_navbar {
+        background: #b99365;
+        padding: 20px;
+        width: 450px;
+        height: 100%;
+        transform: translateX(100%);
+        position: fixed;
+        top: 0;
+        right: 0;
+        transition: 0.3s ease-in-out;
+        z-index: 9999;
+    }
+
+    .header_list {
+        flex-direction: column;
+        gap: 1.2rem;
+        align-items: start;
+
+    }
+
+    .header_navbar.active {
+        transform: translateX(0%);
+    }
+}
+
+@media (max-width:991px) {
+    .header_imgLink {
+        width: 4.375rem;
+        height: 5rem;
+    }
+}

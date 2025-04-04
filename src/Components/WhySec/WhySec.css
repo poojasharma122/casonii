@@ -1,0 +1,55 @@
+.whyUse_inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.whyuse_sec {
+  width: 31%;
+  background-color: var(--white-color);
+  border-radius: 4px;
+  padding: 1.8rem 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+.whyuse_sec:hover {
+  transform: translateY(-5px);
+}
+
+
+.whyuse-img {
+  width: 4rem;
+  height: 4rem;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+}
+
+.whyuse_sec h4 {
+  color: #a57b4e;
+  margin-bottom: 0.5rem;
+}
+ 
+.whySec-info .whyuse_sec {
+  width: 75%;
+
+}
+@media (max-width:1024px) {
+  .whyuse_sec {
+    width: 48%;
+  }
+}
+
+@media (max-width:767px) {
+  .whyuse_sec {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+   
+.whySec-info .whyuse_sec {
+  width: 100%;
+
+}
+}

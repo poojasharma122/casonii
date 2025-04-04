@@ -44,7 +44,7 @@ const TopHotel = ({ hotel, index }) => {
                   <button onClick={toggleDescription} className="btn">
                     {isExpanded ? "Read Less" : "Read More"}
                   </button>
-                  <button className="btn">View hotel</button>
+                  {/* <button className="btn">View hotel</button> */}
                 </div>
               </div>
             </div>
